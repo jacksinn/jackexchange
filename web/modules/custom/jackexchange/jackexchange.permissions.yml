@@ -1,0 +1,30 @@
+add lesson entity entities:
+  title: 'Create new Lesson entity entities'
+
+administer lesson entity entities:
+  title: 'Administer Lesson entity entities'
+  description: 'Allow to access the administration form to configure Lesson entity entities.'
+  restrict access: true
+
+delete lesson entity entities:
+  title: 'Delete Lesson entity entities'
+
+edit lesson entity entities:
+  title: 'Edit Lesson entity entities'
+
+view published lesson entity entities:
+  title: 'View published Lesson entity entities'
+
+view unpublished lesson entity entities:
+  title: 'View unpublished Lesson entity entities'
+
+view all lesson entity revisions:
+  title: 'View all Lesson entity revisions'
+
+revert all lesson entity revisions:
+  title: 'Revert all Lesson entity revisions'
+  description: 'Role requires permission <em>view Lesson entity revisions</em> and <em>edit rights</em> for lesson entity entities in question or <em>administer lesson entity entities</em>.'
+
+delete all lesson entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Lesson entity revisions</em> and <em>delete rights</em> for lesson entity entities in question or <em>administer lesson entity entities</em>.'

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/jackexchange",
+  "type": "drupal-module",
+  "description": "Manages Lessons and content for knowledge share",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/jackexchange",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/jackexchange",
+    "source": "http://cgit.drupalcode.org/jackexchange"
+  },
+  "require": { }
+}

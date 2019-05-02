@@ -1,0 +1,5 @@
+name: 'jackexchange'
+type: module
+description: 'Manages Lessons and content for knowledge share'
+core: 8.x
+package: 'Jack Exchange'

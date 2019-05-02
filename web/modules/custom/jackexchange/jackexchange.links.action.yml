@@ -1,0 +1,11 @@
+entity.lesson_entity.add_form:
+  route_name: entity.lesson_entity.add_page
+  title: 'Add Lesson entity'
+  appears_on:
+    - entity.lesson_entity.collection
+entity.lesson_entity_type.add_form:
+  route_name: entity.lesson_entity_type.add_form
+  title: 'Add Lesson entity type'
+  appears_on:
+    - entity.lesson_entity_type.collection
+

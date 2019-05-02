@@ -1,0 +1,18 @@
+
+# Lesson entity menu items definition
+entity.lesson_entity.collection:
+  title: 'Lesson entity list'
+  route_name: entity.lesson_entity.collection
+  description: 'List Lesson entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Lesson entity type menu items definition
+entity.lesson_entity_type.collection:
+  title: 'Lesson entity type'
+  route_name: entity.lesson_entity_type.collection
+  description: 'List Lesson entity type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,64 @@
+<?php
+
+/**
+ * @file
+ * Contains jackexchange.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function jackexchange_help($route_name, RouteMatchInterface $route_match)
+{
+    switch ($route_name) {
+        // Main module help for the jackexchange module.
+        case 'help.page.jackexchange':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Manages Lessons and content for knowledge share') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function jackexchange_theme()
+{
+    $theme = [];
+    $theme['jackexchange'] = [
+        'render element' => 'children',
+    ];
+    $theme['lesson_entity'] = [
+        'render element' => 'elements',
+        'file' => 'lesson_entity.page.inc',
+        'template' => 'lesson_entity',
+    ];
+    $theme['lesson_entity_content_add_list'] = [
+        'render element' => 'content',
+        'variables' => ['content' => null],
+        'file' => 'lesson_entity.page.inc',
+    ];
+    return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function jackexchange_theme_suggestions_lesson_entity(array $variables)
+{
+    $suggestions = [];
+    $entity = $variables['elements']['#lesson_entity'];
+    $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+    $suggestions[] = 'lesson_entity__' . $sanitized_view_mode;
+    $suggestions[] = 'lesson_entity__' . $entity->bundle();
+    $suggestions[] = 'lesson_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+    $suggestions[] = 'lesson_entity__' . $entity->id();
+    $suggestions[] = 'lesson_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+    return $suggestions;
+}
