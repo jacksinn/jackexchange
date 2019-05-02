@@ -1,0 +1,14 @@
+uuid: 63fe85f6-d20e-48a6-8f44-0b2a07133b98
+name: jackExchange
+mail: scjackson@linux.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

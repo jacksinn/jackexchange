@@ -1,0 +1,14 @@
+uuid: 6acab46c-1c6a-4a2a-853b-a97557b3b4cd
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - scjackson@linux.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
