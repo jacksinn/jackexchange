@@ -21,6 +21,7 @@ module:
   help: 0
   history: 0
   image: 0
+  lesson_step: 0
   link: 0
   menu_ui: 0
   node: 0
