@@ -1,0 +1,18 @@
+
+# Lesson Step menu items definition
+entity.lesson_step_entity.collection:
+  title: 'Lesson Step list'
+  route_name: entity.lesson_step_entity.collection
+  description: 'List Lesson Step entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Lesson Step type menu items definition
+entity.lesson_step_entity_type.collection:
+  title: 'Lesson Step type'
+  route_name: entity.lesson_step_entity_type.collection
+  description: 'List Lesson Step type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

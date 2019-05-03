@@ -1,0 +1,30 @@
+add lesson step entities:
+  title: 'Create new Lesson Step entities'
+
+administer lesson step entities:
+  title: 'Administer Lesson Step entities'
+  description: 'Allow to access the administration form to configure Lesson Step entities.'
+  restrict access: true
+
+delete lesson step entities:
+  title: 'Delete Lesson Step entities'
+
+edit lesson step entities:
+  title: 'Edit Lesson Step entities'
+
+view published lesson step entities:
+  title: 'View published Lesson Step entities'
+
+view unpublished lesson step entities:
+  title: 'View unpublished Lesson Step entities'
+
+view all lesson step revisions:
+  title: 'View all Lesson Step revisions'
+
+revert all lesson step revisions:
+  title: 'Revert all Lesson Step revisions'
+  description: 'Role requires permission <em>view Lesson Step revisions</em> and <em>edit rights</em> for lesson step entities in question or <em>administer lesson step entities</em>.'
+
+delete all lesson step revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Lesson Step revisions</em> and <em>delete rights</em> for lesson step entities in question or <em>administer lesson step entities</em>.'

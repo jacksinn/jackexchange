@@ -22,3 +22,37 @@ function lesson_step_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function lesson_step_theme() {
+  $theme = [];
+  $theme['lesson_step_entity'] = [
+    'render element' => 'elements',
+    'file' => 'lesson_step_entity.page.inc',
+    'template' => 'lesson_step_entity',
+  ];
+  $theme['lesson_step_entity_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'lesson_step_entity.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function lesson_step_theme_suggestions_lesson_step_entity(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#lesson_step_entity'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'lesson_step_entity__' . $sanitized_view_mode;
+  $suggestions[] = 'lesson_step_entity__' . $entity->bundle();
+  $suggestions[] = 'lesson_step_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'lesson_step_entity__' . $entity->id();
+  $suggestions[] = 'lesson_step_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
