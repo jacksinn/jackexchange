@@ -1,0 +1,5 @@
+name: 'LessonStep'
+type: module
+description: 'Create a lesson step'
+core: 8.x
+package: 'JackExchange'

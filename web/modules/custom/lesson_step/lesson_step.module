@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains lesson_step.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lesson_step_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lesson_step module.
+    case 'help.page.lesson_step':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Create a lesson step') . '</p>';
+      return $output;
+
+    default:
+  }
+}
