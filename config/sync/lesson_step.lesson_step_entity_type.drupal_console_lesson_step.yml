@@ -1,0 +1,6 @@
+uuid: e7b1d432-00bb-4f52-aaf6-077efc680840
+langcode: en
+status: true
+dependencies: {  }
+id: drupal_console_lesson_step
+label: 'Drupal Console Lesson Step'

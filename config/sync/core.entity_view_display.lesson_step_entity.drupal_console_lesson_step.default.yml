@@ -1,0 +1,38 @@
+uuid: 9ee138e8-c308-43a5-9dc7-ccb172a06403
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_title
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+  module:
+    - user
+id: lesson_step_entity.drupal_console_lesson_step.default
+targetEntityType: lesson_step_entity
+bundle: drupal_console_lesson_step
+mode: default
+content:
+  field_title:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

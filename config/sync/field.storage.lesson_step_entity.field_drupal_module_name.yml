@@ -1,0 +1,21 @@
+uuid: 7ef7d9b9-0633-405a-9a15-32b75189206d
+langcode: en
+status: true
+dependencies:
+  module:
+    - lesson_step
+id: lesson_step_entity.field_drupal_module_name
+field_name: field_drupal_module_name
+entity_type: lesson_step_entity
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

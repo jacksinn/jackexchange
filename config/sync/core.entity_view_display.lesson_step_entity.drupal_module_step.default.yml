@@ -1,0 +1,38 @@
+uuid: ffd2227e-38b9-43c1-842c-9239f1beba2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.drupal_module_step.field_drupal_module_name
+    - lesson_step.lesson_step_entity_type.drupal_module_step
+  module:
+    - user
+id: lesson_step_entity.drupal_module_step.default
+targetEntityType: lesson_step_entity
+bundle: drupal_module_step
+mode: default
+content:
+  field_drupal_module_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

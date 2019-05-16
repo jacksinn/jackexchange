@@ -1,0 +1,38 @@
+uuid: 3ec6699b-b079-463c-91bd-8a63a28368f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.drupal_module_step.field_drupal_module_name
+    - lesson_step.lesson_step_entity_type.drupal_module_step
+id: lesson_step_entity.drupal_module_step.default
+targetEntityType: lesson_step_entity
+bundle: drupal_module_step
+mode: default
+content:
+  field_drupal_module_name:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

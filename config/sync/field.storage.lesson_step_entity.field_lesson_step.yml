@@ -1,0 +1,19 @@
+uuid: a78ed0d7-60ff-48e3-a386-5f8ce0a222ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - lesson_step
+id: lesson_step_entity.field_lesson_step
+field_name: field_lesson_step
+entity_type: lesson_step_entity
+type: entity_reference
+settings:
+  target_type: lesson_step_entity
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,36 @@
+uuid: 4ad8cd72-91cf-4a67-af73-dcad7f66fed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_lesson_step
+    - lesson_step.lesson_step_entity_type.composer_lesson_step
+    - lesson_step.lesson_step_entity_type.docker_lesson_step
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+    - lesson_step.lesson_step_entity_type.drupal_lesson_step
+    - lesson_step.lesson_step_entity_type.lesson
+id: lesson_step_entity.lesson.field_lesson_step
+field_name: field_lesson_step
+entity_type: lesson_step_entity
+bundle: lesson
+label: 'Lesson Step'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:lesson_step_entity'
+  handler_settings:
+    target_bundles:
+      composer_lesson_step: composer_lesson_step
+      docker_lesson_step: docker_lesson_step
+      drupal_console_lesson_step: drupal_console_lesson_step
+      drupal_lesson_step: drupal_lesson_step
+      lesson: lesson
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: composer_lesson_step
+field_type: entity_reference

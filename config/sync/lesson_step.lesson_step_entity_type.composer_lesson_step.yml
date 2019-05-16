@@ -1,0 +1,6 @@
+uuid: c6caf6da-21d9-4039-8c3e-dafde1580e44
+langcode: en
+status: true
+dependencies: {  }
+id: composer_lesson_step
+label: 'Composer Lesson Step'

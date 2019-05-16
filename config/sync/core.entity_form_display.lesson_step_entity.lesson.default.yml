@@ -1,0 +1,36 @@
+uuid: 8e432dc9-7e9c-42f0-af60-dc58809efd68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.lesson.field_lesson_step
+    - lesson_step.lesson_step_entity_type.lesson
+id: lesson_step_entity.lesson.default
+targetEntityType: lesson_step_entity
+bundle: lesson
+mode: default
+content:
+  field_lesson_step:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

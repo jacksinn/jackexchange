@@ -1,0 +1,19 @@
+uuid: 3534a25d-f381-4e7d-ad23-d782d5918cec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_drupal_module_name
+    - lesson_step.lesson_step_entity_type.drupal_module_step
+id: lesson_step_entity.drupal_module_step.field_drupal_module_name
+field_name: field_drupal_module_name
+entity_type: lesson_step_entity
+bundle: drupal_module_step
+label: 'Drupal Module Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
