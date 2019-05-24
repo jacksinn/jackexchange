@@ -1,0 +1,28 @@
+uuid: 237e141b-fad5-417d-86cd-728f7031ee8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_remote_video
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+    - media.type.remote_video
+id: lesson_step_entity.drupal_console_lesson_step.field_remote_video
+field_name: field_remote_video
+entity_type: lesson_step_entity
+bundle: drupal_console_lesson_step
+label: 'Remote Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

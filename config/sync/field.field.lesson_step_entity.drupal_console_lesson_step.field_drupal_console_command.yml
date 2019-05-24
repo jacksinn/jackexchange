@@ -1,0 +1,19 @@
+uuid: cdf591c9-a12d-44e0-83bd-0d9e14fb4712
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_drupal_console_command
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+id: lesson_step_entity.drupal_console_lesson_step.field_drupal_console_command
+field_name: field_drupal_console_command
+entity_type: lesson_step_entity
+bundle: drupal_console_lesson_step
+label: 'Drupal Console Command Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

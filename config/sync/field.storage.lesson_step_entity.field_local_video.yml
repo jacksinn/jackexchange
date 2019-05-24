@@ -1,20 +1,19 @@
-uuid: 83f1aba6-d639-4577-a313-68f6f154da34
+uuid: d7aa79db-59af-4e3b-b76d-2a53f9421450
 langcode: en
 status: true
 dependencies:
   module:
     - lesson_step
-id: lesson_step_entity.field_title
-field_name: field_title
+    - media
+id: lesson_step_entity.field_local_video
+field_name: field_local_video
 entity_type: lesson_step_entity
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: media
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

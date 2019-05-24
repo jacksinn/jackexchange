@@ -1,40 +1,31 @@
-uuid: 69482c90-b153-46f4-bed9-aab2f14e8cfd
+uuid: ff5af9b5-4a4d-4f00-b588-a3ee9436fb82
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_code
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_drupal_console_command
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_instructions
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_local_video
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_remote_video
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_screenshot
-    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+    - field.field.lesson_step_entity.composer_lesson_step.field_code
+    - field.field.lesson_step_entity.composer_lesson_step.field_instructions
+    - field.field.lesson_step_entity.composer_lesson_step.field_local_video
+    - field.field.lesson_step_entity.composer_lesson_step.field_remote_video
+    - field.field.lesson_step_entity.composer_lesson_step.field_screenshot
+    - lesson_step.lesson_step_entity_type.composer_lesson_step
   module:
     - text
-id: lesson_step_entity.drupal_console_lesson_step.default
+id: lesson_step_entity.composer_lesson_step.default
 targetEntityType: lesson_step_entity
-bundle: drupal_console_lesson_step
+bundle: composer_lesson_step
 mode: default
 content:
   field_code:
-    weight: 4
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_drupal_console_command:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_instructions:
-    weight: 3
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
@@ -42,19 +33,25 @@ content:
     type: text_textarea
     region: content
   field_local_video:
-    weight: 7
-    settings: {  }
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_remote_video:
-    weight: 6
-    settings: {  }
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_screenshot:
-    weight: 26
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60
@@ -72,7 +69,7 @@ content:
     third_party_settings: {  }
   user_id:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 6
     settings:
       match_operator: CONTAINS
       size: 60

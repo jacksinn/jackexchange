@@ -1,0 +1,19 @@
+uuid: 3f08a4fd-8a2c-4c3a-aa10-0c58907cde0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lesson_step
+    - text
+id: lesson_step_entity.field_instructions
+field_name: field_instructions
+entity_type: lesson_step_entity
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: 59881e4f-0697-4e40-b44e-e328e26149e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - lesson_step
+    - media
+id: lesson_step_entity.field_screenshot
+field_name: field_screenshot
+entity_type: lesson_step_entity
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

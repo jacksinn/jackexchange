@@ -3,16 +3,30 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.lesson_step_entity.drupal_console_lesson_step.field_title
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_code
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_drupal_console_command
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_instructions
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_local_video
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_remote_video
+    - field.field.lesson_step_entity.drupal_console_lesson_step.field_screenshot
     - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
   module:
+    - media
+    - text
     - user
 id: lesson_step_entity.drupal_console_lesson_step.default
 targetEntityType: lesson_step_entity
 bundle: drupal_console_lesson_step
 mode: default
 content:
-  field_title:
+  field_code:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_drupal_console_command:
     weight: 1
     label: above
     settings:
@@ -20,10 +34,44 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_instructions:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_local_video:
+    type: entity_reference_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_remote_video:
+    type: entity_reference_entity_view
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_screenshot:
+    type: media_thumbnail
+    weight: 4
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
   name:
     label: above
     type: string
-    weight: -4
+    weight: 0
     region: content
     settings:
       link_to_entity: false
@@ -31,7 +79,7 @@ content:
   user_id:
     label: hidden
     type: author
-    weight: 0
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }

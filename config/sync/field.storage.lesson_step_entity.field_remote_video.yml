@@ -1,0 +1,20 @@
+uuid: cebd4641-22a1-4f32-a18f-8c162da3e78c
+langcode: en
+status: true
+dependencies:
+  module:
+    - lesson_step
+    - media
+id: lesson_step_entity.field_remote_video
+field_name: field_remote_video
+entity_type: lesson_step_entity
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

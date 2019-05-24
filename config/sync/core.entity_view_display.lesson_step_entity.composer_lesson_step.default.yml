@@ -1,0 +1,76 @@
+uuid: c6828132-d2e0-4493-8a1f-eab3e4e5d532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.composer_lesson_step.field_code
+    - field.field.lesson_step_entity.composer_lesson_step.field_instructions
+    - field.field.lesson_step_entity.composer_lesson_step.field_local_video
+    - field.field.lesson_step_entity.composer_lesson_step.field_remote_video
+    - field.field.lesson_step_entity.composer_lesson_step.field_screenshot
+    - lesson_step.lesson_step_entity_type.composer_lesson_step
+  module:
+    - text
+    - user
+id: lesson_step_entity.composer_lesson_step.default
+targetEntityType: lesson_step_entity
+bundle: composer_lesson_step
+mode: default
+content:
+  field_code:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_instructions:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_local_video:
+    weight: 4
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_remote_video:
+    weight: 5
+    label: above
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_screenshot:
+    weight: 3
+    label: above
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  name:
+    label: above
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

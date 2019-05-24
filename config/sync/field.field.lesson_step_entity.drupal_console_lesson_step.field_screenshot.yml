@@ -1,0 +1,29 @@
+uuid: 0767520f-e31c-406f-bd17-8418c90c2e27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_screenshot
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+    - media.type.screenshot
+id: lesson_step_entity.drupal_console_lesson_step.field_screenshot
+field_name: field_screenshot
+entity_type: lesson_step_entity
+bundle: drupal_console_lesson_step
+label: Screenshot
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      screenshot: screenshot
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

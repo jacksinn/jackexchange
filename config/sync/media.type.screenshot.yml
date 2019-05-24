@@ -1,0 +1,13 @@
+uuid: 48e7974b-5a0c-4bd6-87b4-97d1132f30de
+langcode: en
+status: true
+dependencies: {  }
+id: screenshot
+label: Screenshot
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map: {  }

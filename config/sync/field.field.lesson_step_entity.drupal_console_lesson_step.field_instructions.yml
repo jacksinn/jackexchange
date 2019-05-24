@@ -1,0 +1,21 @@
+uuid: ab52c499-c22e-4bf8-978e-c4b9fcb19a34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_instructions
+    - lesson_step.lesson_step_entity_type.drupal_console_lesson_step
+  module:
+    - text
+id: lesson_step_entity.drupal_console_lesson_step.field_instructions
+field_name: field_instructions
+entity_type: lesson_step_entity
+bundle: drupal_console_lesson_step
+label: Instructions
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
