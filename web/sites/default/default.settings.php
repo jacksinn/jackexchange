@@ -89,6 +89,16 @@
  * @endcode
  */
 $databases = [];
+$databases['default']['default'] = [
+  'database' => getenv('MYSQL_DATABASE'),
+  'username' => getenv('MYSQL_USER'),
+  'password' => getenv('MYSQL_PASSWORD'),
+  'host' => getenv('MYSQL_HOSTNAME'),
+  'port' => getenv('MYSQL_PORT'),
+  'driver' => 'mysql',
+  'prefix' => '',
+  'collation' => 'utf8mb4_general_ci',
+];
 
 /**
  * Customizing database settings.
@@ -280,7 +290,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = getenv('HASH_SALT');
 
 /**
  * Deployment identifier.
