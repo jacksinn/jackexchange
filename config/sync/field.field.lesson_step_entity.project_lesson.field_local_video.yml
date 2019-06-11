@@ -1,0 +1,28 @@
+uuid: b18a9091-6816-4408-af8b-4596ee3db7d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_local_video
+    - lesson_step.lesson_step_entity_type.project_lesson
+    - media.type.video
+id: lesson_step_entity.project_lesson.field_local_video
+field_name: field_local_video
+entity_type: lesson_step_entity
+bundle: project_lesson
+label: 'Local Video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

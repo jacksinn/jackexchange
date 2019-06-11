@@ -1,0 +1,37 @@
+uuid: d1973ad0-bf1c-453e-8bbc-6ecff628ac34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lesson_request.body
+    - field.field.node.lesson_request.field_related_topic
+    - node.type.lesson_request
+  module:
+    - text
+    - user
+id: node.lesson_request.default
+targetEntityType: node
+bundle: lesson_request
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_related_topic:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,0 +1,79 @@
+uuid: 9a3ec274-1294-40ed-b6d4-f2ac6934b70e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.lesson_step_entity.project_lesson.field_fundamental_lessons
+    - field.field.lesson_step_entity.project_lesson.field_instructions
+    - field.field.lesson_step_entity.project_lesson.field_lesson_overview
+    - field.field.lesson_step_entity.project_lesson.field_local_video
+    - field.field.lesson_step_entity.project_lesson.field_remote_video
+    - lesson_step.lesson_step_entity_type.project_lesson
+  module:
+    - text
+id: lesson_step_entity.project_lesson.default
+targetEntityType: lesson_step_entity
+bundle: project_lesson
+mode: default
+content:
+  field_fundamental_lessons:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_instructions:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_lesson_overview:
+    weight: 30
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_local_video:
+    weight: 27
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_remote_video:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

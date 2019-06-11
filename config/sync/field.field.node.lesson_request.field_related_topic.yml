@@ -1,0 +1,29 @@
+uuid: b87fc01d-5e62-4bf5-b8f0-ddbc4a262d52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_related_topic
+    - node.type.lesson_request
+    - taxonomy.vocabulary.lesson_type
+id: node.lesson_request.field_related_topic
+field_name: field_related_topic
+entity_type: node
+bundle: lesson_request
+label: 'Related Topic'
+description: 'Select a primary topic from the list for the request e.g. choose ''Project'' if it will contain a multitude of steps towards a goal (such as ''How to deploy a site to Heroku'') or perhaps choose Drupal Console if you want to learn how to import configuration from Drupal Console.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      lesson_type: lesson_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

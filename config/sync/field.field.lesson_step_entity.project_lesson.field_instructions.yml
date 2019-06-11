@@ -1,0 +1,21 @@
+uuid: c45ef3eb-3d39-4901-8fa2-a995185162d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_instructions
+    - lesson_step.lesson_step_entity_type.project_lesson
+  module:
+    - text
+id: lesson_step_entity.project_lesson.field_instructions
+field_name: field_instructions
+entity_type: lesson_step_entity
+bundle: project_lesson
+label: Instructions
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

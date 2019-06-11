@@ -25,3 +25,8 @@
 
 .DS_Store
 
+/web/sites/*/settings.php
+
+/web/sites/*/default.settings.php
+
+

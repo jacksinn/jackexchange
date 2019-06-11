@@ -1,0 +1,8 @@
+uuid: 2e20fa40-d21e-405d-9529-654426b2c604
+langcode: en
+status: true
+dependencies: {  }
+name: 'Lesson Type'
+vid: lesson_type
+description: ''
+weight: 0

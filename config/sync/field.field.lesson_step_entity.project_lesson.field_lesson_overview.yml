@@ -1,0 +1,21 @@
+uuid: fda4c0e6-ea55-4e4a-a22e-693b89ceac9c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.lesson_step_entity.field_lesson_overview
+    - lesson_step.lesson_step_entity_type.project_lesson
+  module:
+    - text
+id: lesson_step_entity.project_lesson.field_lesson_overview
+field_name: field_lesson_overview
+entity_type: lesson_step_entity
+bundle: project_lesson
+label: 'Lesson Overview'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

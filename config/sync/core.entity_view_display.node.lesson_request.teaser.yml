@@ -1,0 +1,30 @@
+uuid: 4609fa37-95c8-403b-8abb-f057b1299f18
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lesson_request.body
+    - node.type.lesson_request
+  module:
+    - text
+    - user
+id: node.lesson_request.teaser
+targetEntityType: node
+bundle: lesson_request
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
