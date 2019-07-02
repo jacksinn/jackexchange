@@ -1,0 +1,30 @@
+uuid: 1c477d88-5ca4-47c7-9600-e7edaf98186d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.challenge.body
+    - node.type.challenge
+  module:
+    - text
+    - user
+id: node.challenge.teaser
+targetEntityType: node
+bundle: challenge
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

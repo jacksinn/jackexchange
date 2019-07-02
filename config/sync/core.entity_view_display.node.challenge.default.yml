@@ -1,0 +1,28 @@
+uuid: 62a53380-b15a-4c0b-84de-f1e3445a4949
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.challenge.body
+    - node.type.challenge
+  module:
+    - text
+    - user
+id: node.challenge.default
+targetEntityType: node
+bundle: challenge
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -26,7 +26,7 @@
         "drupal/devel": "^2.0",
         "drupal/graphql": "^3.0@RC",
         "drupal/graphql_views": "^1.0@beta",
-        "drupal/jsonapi_extras": "^3.7",
+        "drupal/jsonapi_extras": "^3.8",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
