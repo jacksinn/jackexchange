@@ -261,8 +261,9 @@ $databases['default']['default'] = [
  *   ];
  * @endcode
  */
-$config_directories = [];
-
+$config_directories = [
+  CONFIG_SYNC_DIRECTORY => '../config/sync',
+];
 /**
  * Settings:
  *
