@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac582834e7f7c2a475b164b60db53153",
+    "content-hash": "4d7ce9a608b6fcdcf59afdabd8824271",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2598,6 +2598,69 @@
             "time": "2019-06-05T19:21:30+00:00"
         },
         {
+            "name": "drupal/cors",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cors.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cors-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "eec3f9c523003258392c3dd17afa72fecf12d21b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/coder": "dev-7.x-2.x",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1455049439",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Wim Leers",
+                    "homepage": "https://www.drupal.org/user/99777"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "ericduran",
+                    "homepage": "https://www.drupal.org/user/244460"
+                },
+                {
+                    "name": "justafish",
+                    "homepage": "https://www.drupal.org/user/161058"
+                }
+            ],
+            "description": "Allows Cross-origin resource sharing.",
+            "homepage": "https://www.drupal.org/project/cors",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cors"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "2.1.0",
             "source": {
@@ -2829,17 +2892,17 @@
         },
         {
             "name": "drupal/jsonapi_extras",
-            "version": "3.7.0",
+            "version": "3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/jsonapi_extras.git",
-                "reference": "8.x-3.7"
+                "reference": "8.x-3.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jsonapi_extras-8.x-3.7.zip",
-                "reference": "8.x-3.7",
-                "shasum": "9987918f7b8a814de267231006f25cff2eb7cb26"
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_extras-8.x-3.8.zip",
+                "reference": "8.x-3.8",
+                "shasum": "d2f793ca5e6ac7ec2db42f1ca05e468d3d20a568"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2855,8 +2918,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.7",
-                    "datestamp": "1558388885",
+                    "version": "8.x-3.8",
+                    "datestamp": "1560872886",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3143,16 +3206,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.8",
+            "version": "2.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98"
+                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
-                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/128cc721d771ec2c46ce59698f4ca42b73f71b25",
+                "reference": "128cc721d771ec2c46ce59698f4ca42b73f71b25",
                 "shasum": ""
             },
             "require": {
@@ -3196,7 +3259,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-05-16T22:02:54+00:00"
+            "time": "2019-06-23T10:14:27+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -6068,16 +6131,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.42.1",
+            "version": "v1.42.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf"
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/671347603760a88b1e7288aaa9378f33687d7edf",
-                "reference": "671347603760a88b1e7288aaa9378f33687d7edf",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/21707d6ebd05476854805e4f91b836531941bcd4",
+                "reference": "21707d6ebd05476854805e4f91b836531941bcd4",
                 "shasum": ""
             },
             "require": {
@@ -6130,7 +6193,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-04T11:31:08+00:00"
+            "time": "2019-06-18T15:35:16+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -6960,17 +7023,17 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.4",
+            "version": "8.3.5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/coder.git",
-                "reference": "0a274321f4930f186d9f246783f0b4d743501cf8"
+                "reference": "35277fc8675b6a2cbb194f8880145a9c85c845c4"
             },
             "require": {
                 "ext-mbstring": "*",
                 "php": ">=5.5.9",
                 "squizlabs/php_codesniffer": "^3.4.1",
-                "symfony/yaml": ">=2.0.0"
+                "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
                 "phpunit/phpunit": ">=3.7 <6"
@@ -6993,7 +7056,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-05-24T11:44:05+00:00"
+            "time": "2019-06-14T15:06:06+00:00"
         },
         {
             "name": "fabpot/goutte",
@@ -7574,16 +7637,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
-                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
+                "reference": "1927e75f4ed19131ec9bcc3b002e07fb1173ee76",
                 "shasum": ""
             },
             "require": {
@@ -7604,8 +7667,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Prophecy\\": "src/"
+                "psr-4": {
+                    "Prophecy\\": "src/Prophecy"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -7633,7 +7696,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-08-05T17:53:17+00:00"
+            "time": "2019-06-13T12:50:23+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -8764,16 +8827,16 @@
         },
         {
             "name": "theseer/tokenizer",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/tokenizer.git",
-                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8"
+                "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/1c42705be2b6c1de5904f8afacef5895cab44bf8",
-                "reference": "1c42705be2b6c1de5904f8afacef5895cab44bf8",
+                "url": "https://api.github.com/repos/theseer/tokenizer/zipball/11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
+                "reference": "11336f6f84e16a720dae9d8e6ed5019efa85a0f9",
                 "shasum": ""
             },
             "require": {
@@ -8800,7 +8863,7 @@
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
-            "time": "2019-04-04T09:56:43+00:00"
+            "time": "2019-06-13T22:48:21+00:00"
         },
         {
             "name": "webflo/drupal-core-require-dev",
